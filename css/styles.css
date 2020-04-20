@@ -1,10 +1,217 @@
 * {box-sizing: border-box;}
 :root {
 
+    --clr-Primary-Lime-Green: hsl(163, 72%, 41%);
+    --clr-Primary-Bright-Red: hsl(356, 69%, 56%);
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Social-Facebook: hsl(195, 100%, 50%);
+    --clr-Social-Twitter: hsl(203, 89%, 53%);
+    --clr-Social-Instagram: linear-gradient(hsl(37, 97%, 70%) , hsl(329, 70%, 58%) ) ;
+    --clr-Social-YouTube: hsl(348, 97%, 39%);
+
+    /* #### Toggle */
+
+    --clr-Dark-Toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%) );
+    --clr-White-Toggle: hsl(230, 22%, 74%);
+
+      /* #### Dark Theme */
+      --clr-Dark-Very-Dark-Blue-BG: hsl(230, 17%, 14%);
+      --clr-Dark-Very-Dark-Blue-Top-BG: hsl(232, 19%, 15%);
+      --clr-Dark-Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
+      --clr-Dark-Desaturated-Blue-Text: hsl(228, 34%, 66%);
+      
+
+      /* #### Light Theme */
+      --clr-Light-Very-Pale-Blue-Top-BG: hsl(225, 100%, 98%);
+      --clr-Light-Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
+      --clr-Light-Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+      --clr-Light-Very-Dark-Blue-Text: hsl(230, 17%, 14%);
+
+
 }
 
 body {
     margin: 0;
     font-size: 14px;
     font-family: 'Inter', sans-serif;
+    background-color: var(--clr-Dark-Very-Dark-Blue-BG);
 }
+
+/* Reusable */
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(286px, 1fr));
+}
+
+.positive-data{
+    color: var(--clr-Primary-Lime-Green);
+    font-weight: 700;
+}
+
+.negative-data {
+    color: var(--clr-Primary-Bright-Red);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+
+
+/*================
+Typograpgy
+================*/
+
+h2 {
+    color: var(--clr-White);
+    margin-bottom: 0.2em;
+    font-size: 1.75rem;
+}
+
+.subtitle,
+.toggle-text {
+    color: var(--clr-Dark-Desaturated-Blue-Text);
+}
+
+.subtitle {
+    margin-top: 0
+}
+
+/*================
+Nav
+================*/
+
+nav {
+    margin-top: 2em;
+    padding: 1em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*================
+DashBoard
+================*/
+
+
+.dashboard-all-container {
+    padding: 2em 3em;
+    
+}
+.social-container::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    top: -4px;
+    left: 0;
+    height: 4px;
+    border-radius: 4px 4px 0 0;
+}
+.social-container:nth-child(1)::before {
+    background: var(--clr-Social-Facebook);
+}
+.social-container:nth-child(2)::before {
+    background: var(--clr-Social-Twitter);
+}
+.social-container:nth-child(3)::before {
+    background: var(--clr-Social-Instagram);
+}
+.social-container:nth-child(4)::before {
+    background: var(--clr-Social-YouTube)
+}
+
+.social-container {
+    cursor: pointer;
+    position: relative;
+    padding: 2.1em 4.64em;
+    background-color: var(--clr-Dark-Dark-Desaturated-Blue-Card-BG);
+    text-align: center;
+    color: var(--clr-Dark-Desaturated-Blue-Text);
+    border-radius: 0 0 4px 4px;
+    transition: all 250ms ease-in-out;
+}
+
+.social-container:hover,
+.social-container:focus{
+    background:   hsl(228, 35%, 25%);
+
+}
+
+.social_name {
+    margin: 1.45em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_name img,
+.social_today img{
+    margin-right: 0.5em;
+}
+
+.social_followers_num{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--clr-White);
+}
+
+.social_followers_text {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2em;
+}
+
+.social_today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*================
+Today Overview
+================*/
+
+.overview {
+    padding: 1em 3em;
+
+}
+
+.overview h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.overview-wrapper {
+    background: var(--clr-Dark-Dark-Desaturated-Blue-Card-BG);
+    padding: 1.5em;
+    color: var(--clr-Dark-Desaturated-Blue-Text);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.overview-wrapper .top,
+.overview-wrapper .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overview_num {
+    color: var(--clr-White);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
