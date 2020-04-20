@@ -194,7 +194,9 @@ DashBoard
 }
 
 .social-container:hover,
-.social-container:focus{
+.social-container:focus,
+.overview-wrapper:hover,
+.overview-wrapper:focus{
     background:   hsl(228, 35%, 25%);
 
 }
