@@ -36,15 +36,15 @@ body {
     margin: 0;
     font-size: 14px;
     font-family: 'Inter', sans-serif;
-    background-image: linear-gradient(to bottom, hsl(232, 19%, 15%) 30% ,hsl(230, 17%, 14%) 0%);
+    background-image: linear-gradient(to bottom, hsl(232, 19%, 15%),hsl(230, 17%, 14%) );
     background-repeat: no-repeat;
     color: hsl(0, 0%, 100%);
-    padding-bottom: 5em;
-    height: 100vh;
+    padding-bottom: 10em;
+    height: 100%;
 }
 
 .toggle-white-body{
-    background-image: linear-gradient(to bottom, hsl(225, 100%, 98%) 30% ,hsl(0, 0%, 100%) 0%);
+    background-image: linear-gradient(to bottom, hsl(225, 100%, 98%) ,hsl(0, 0%, 100%) );
     color: hsl(230, 17%, 14%);
     background-repeat: no-repeat;
     margin:0;
@@ -58,7 +58,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -175,7 +175,7 @@ DashBoard
 
 
 .dashboard-all-container {
-    padding: 2em 3em;
+    padding: 1.8em 3em;
     
 }
 .social-container::before {
