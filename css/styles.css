@@ -57,14 +57,14 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .grid {
     display: grid;
     grid-gap: 35px;
-    grid-template-columns: repeat(auto-fit, minmax(286px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
 }
 
 .positive-data{
