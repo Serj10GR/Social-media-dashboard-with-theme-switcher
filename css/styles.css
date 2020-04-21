@@ -40,6 +40,7 @@ body {
     background-repeat: no-repeat;
     color: hsl(0, 0%, 100%);
     padding-bottom: 5em;
+    height: 100vh;
 }
 
 .toggle-white-body{
