@@ -57,14 +57,14 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .grid {
     display: grid;
     grid-gap: 35px;
-    grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .positive-data{
@@ -111,7 +111,7 @@ Nav
 ================*/
 
 nav {
-    margin-top: 2em;
+    margin-top: 0.5em;
     padding: 1em 3em;
     display: flex;
     justify-content: space-between;
